@@ -1,0 +1,15 @@
+PODS:
+  - SnapKit (4.0.0)
+  - Starscream (3.0.2)
+
+DEPENDENCIES:
+  - SnapKit (~> 4.0.0)
+  - Starscream
+
+SPEC CHECKSUMS:
+  SnapKit: a42d492c16e80209130a3379f73596c3454b7694
+  Starscream: b512c62f6706421221b5ceb2ba01a9f58aca5bea
+
+PODFILE CHECKSUM: c86b61a1607862ed26058f2b2ea58c390afc6e8a
+
+COCOAPODS: 1.3.1

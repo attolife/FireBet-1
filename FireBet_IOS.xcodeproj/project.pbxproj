@@ -1,0 +1,570 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		70443F7420130052006177C5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70443F7320130052006177C5 /* AppDelegate.swift */; };
+		70443F7920130052006177C5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70443F7720130052006177C5 /* Main.storyboard */; };
+		70443F7B20130052006177C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70443F7A20130052006177C5 /* Assets.xcassets */; };
+		70443F8B20130178006177C5 /* JSONParsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70443F8A20130178006177C5 /* JSONParsing.swift */; };
+		70443F8D201301E4006177C5 /* XMLParsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70443F8C201301E4006177C5 /* XMLParsing.swift */; };
+		70443F8F2013020A006177C5 /* HTTP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70443F8E2013020A006177C5 /* HTTP.swift */; };
+		70443F9C201305C1006177C5 /* bet_success.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70443F92201305C1006177C5 /* bet_success.mp3 */; };
+		70443F9D201305C1006177C5 /* tie.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70443F93201305C1006177C5 /* tie.mp3 */; };
+		70443F9E201305C1006177C5 /* bet_ready.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70443F94201305C1006177C5 /* bet_ready.mp3 */; };
+		70443F9F201305C1006177C5 /* selectchip.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70443F95201305C1006177C5 /* selectchip.mp3 */; };
+		70443FA0201305C1006177C5 /* timer_new.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70443F96201305C1006177C5 /* timer_new.mp3 */; };
+		70443FA1201305C1006177C5 /* player_win.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70443F97201305C1006177C5 /* player_win.mp3 */; };
+		70443FA2201305C1006177C5 /* no_more_bet.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70443F98201305C1006177C5 /* no_more_bet.mp3 */; };
+		70443FA3201305C1006177C5 /* banker_win.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70443F99201305C1006177C5 /* banker_win.mp3 */; };
+		70443FA4201305C1006177C5 /* dragon_win.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70443F9A201305C1006177C5 /* dragon_win.mp3 */; };
+		70443FA5201305C1006177C5 /* tiger_win.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70443F9B201305C1006177C5 /* tiger_win.mp3 */; };
+		70443FA820131C91006177C5 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70443FA620131C91006177C5 /* LoginController.swift */; };
+		70443FA920131C91006177C5 /* LoginController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70443FA720131C91006177C5 /* LoginController.xib */; };
+		70443FB22013231C006177C5 /* IntroController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70443FB02013231C006177C5 /* IntroController.swift */; };
+		70443FB32013231C006177C5 /* IntroController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70443FB12013231C006177C5 /* IntroController.xib */; };
+		70443FB6201330D1006177C5 /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70443FB4201330D1006177C5 /* MainController.swift */; };
+		70443FB7201330D1006177C5 /* MainController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70443FB5201330D1006177C5 /* MainController.xib */; };
+		70E699A9201441C4000B781C /* GameBaseView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70E699A8201441C4000B781C /* GameBaseView.xib */; };
+		70E699AB20144216000B781C /* GameBaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E699AA20144216000B781C /* GameBaseView.swift */; };
+		70E699AE201464F5000B781C /* GameBaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E699AC201464F5000B781C /* GameBaseController.swift */; };
+		70E699AF201464F5000B781C /* GameBaseController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70E699AD201464F5000B781C /* GameBaseController.xib */; };
+		70E699B1201489DA000B781C /* ChannelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E699B0201489DA000B781C /* ChannelController.swift */; };
+		70E699B320148A7E000B781C /* ChannelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E699B220148A7E000B781C /* ChannelData.swift */; };
+		70E699B6201494CA000B781C /* ChannelViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E699B4201494CA000B781C /* ChannelViewCell.swift */; };
+		70E699B7201494CA000B781C /* ChannelViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70E699B5201494CA000B781C /* ChannelViewCell.xib */; };
+		70E699B92014AE8A000B781C /* TableData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E699B82014AE8A000B781C /* TableData.swift */; };
+		70E699BB20158C76000B781C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E699BA20158C76000B781C /* Constants.swift */; };
+		E26463921A70476F51FD8646 /* Pods_FireBet_IOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5880FDAAD951AE272A348065 /* Pods_FireBet_IOS.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5880FDAAD951AE272A348065 /* Pods_FireBet_IOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FireBet_IOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		59114F148FF8D962A5E1748A /* Pods-FireBet_IOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FireBet_IOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FireBet_IOS/Pods-FireBet_IOS.debug.xcconfig"; sourceTree = "<group>"; };
+		70443F7020130052006177C5 /* FireBet_IOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FireBet_IOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		70443F7320130052006177C5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		70443F7820130052006177C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		70443F7A20130052006177C5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		70443F7F20130052006177C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		70443F8A20130178006177C5 /* JSONParsing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONParsing.swift; sourceTree = "<group>"; };
+		70443F8C201301E4006177C5 /* XMLParsing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XMLParsing.swift; sourceTree = "<group>"; };
+		70443F8E2013020A006177C5 /* HTTP.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTP.swift; sourceTree = "<group>"; };
+		70443F92201305C1006177C5 /* bet_success.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bet_success.mp3; sourceTree = "<group>"; };
+		70443F93201305C1006177C5 /* tie.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = tie.mp3; sourceTree = "<group>"; };
+		70443F94201305C1006177C5 /* bet_ready.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bet_ready.mp3; sourceTree = "<group>"; };
+		70443F95201305C1006177C5 /* selectchip.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = selectchip.mp3; sourceTree = "<group>"; };
+		70443F96201305C1006177C5 /* timer_new.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = timer_new.mp3; sourceTree = "<group>"; };
+		70443F97201305C1006177C5 /* player_win.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = player_win.mp3; sourceTree = "<group>"; };
+		70443F98201305C1006177C5 /* no_more_bet.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = no_more_bet.mp3; sourceTree = "<group>"; };
+		70443F99201305C1006177C5 /* banker_win.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = banker_win.mp3; sourceTree = "<group>"; };
+		70443F9A201305C1006177C5 /* dragon_win.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = dragon_win.mp3; sourceTree = "<group>"; };
+		70443F9B201305C1006177C5 /* tiger_win.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = tiger_win.mp3; sourceTree = "<group>"; };
+		70443FA620131C91006177C5 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		70443FA720131C91006177C5 /* LoginController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginController.xib; sourceTree = "<group>"; };
+		70443FB02013231C006177C5 /* IntroController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroController.swift; sourceTree = "<group>"; };
+		70443FB12013231C006177C5 /* IntroController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IntroController.xib; sourceTree = "<group>"; };
+		70443FB4201330D1006177C5 /* MainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
+		70443FB5201330D1006177C5 /* MainController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainController.xib; sourceTree = "<group>"; };
+		70E699A8201441C4000B781C /* GameBaseView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GameBaseView.xib; sourceTree = "<group>"; };
+		70E699AA20144216000B781C /* GameBaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameBaseView.swift; sourceTree = "<group>"; };
+		70E699AC201464F5000B781C /* GameBaseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameBaseController.swift; sourceTree = "<group>"; };
+		70E699AD201464F5000B781C /* GameBaseController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GameBaseController.xib; sourceTree = "<group>"; };
+		70E699B0201489DA000B781C /* ChannelController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelController.swift; sourceTree = "<group>"; };
+		70E699B220148A7E000B781C /* ChannelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelData.swift; sourceTree = "<group>"; };
+		70E699B4201494CA000B781C /* ChannelViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelViewCell.swift; sourceTree = "<group>"; };
+		70E699B5201494CA000B781C /* ChannelViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChannelViewCell.xib; sourceTree = "<group>"; };
+		70E699B82014AE8A000B781C /* TableData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableData.swift; sourceTree = "<group>"; };
+		70E699BA20158C76000B781C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		E734D84592BA1F9C15F45CEF /* Pods-FireBet_IOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FireBet_IOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-FireBet_IOS/Pods-FireBet_IOS.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		70443F6D20130052006177C5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E26463921A70476F51FD8646 /* Pods_FireBet_IOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		36EA12949CD6078DC3ACA02A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5880FDAAD951AE272A348065 /* Pods_FireBet_IOS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		70443F6720130052006177C5 = {
+			isa = PBXGroup;
+			children = (
+				70443F7220130052006177C5 /* FireBet_IOS */,
+				70443F7120130052006177C5 /* Products */,
+				D1F4AE03CD43888B3D545E49 /* Pods */,
+				36EA12949CD6078DC3ACA02A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		70443F7120130052006177C5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				70443F7020130052006177C5 /* FireBet_IOS.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		70443F7220130052006177C5 /* FireBet_IOS */ = {
+			isa = PBXGroup;
+			children = (
+				70443F902013050B006177C5 /* Resources */,
+				70443F8920130144006177C5 /* DataService */,
+				70443F88201300C0006177C5 /* Extension */,
+				70443F87201300B8006177C5 /* Model */,
+				70443F86201300B4006177C5 /* View */,
+				70443F85201300A8006177C5 /* Controller */,
+				70443F7320130052006177C5 /* AppDelegate.swift */,
+				70443F7720130052006177C5 /* Main.storyboard */,
+				70443F7F20130052006177C5 /* Info.plist */,
+			);
+			path = FireBet_IOS;
+			sourceTree = "<group>";
+		};
+		70443F85201300A8006177C5 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				70443FB02013231C006177C5 /* IntroController.swift */,
+				70443FB12013231C006177C5 /* IntroController.xib */,
+				70443FA620131C91006177C5 /* LoginController.swift */,
+				70443FA720131C91006177C5 /* LoginController.xib */,
+				70443FB4201330D1006177C5 /* MainController.swift */,
+				70443FB5201330D1006177C5 /* MainController.xib */,
+				70E699AC201464F5000B781C /* GameBaseController.swift */,
+				70E699AD201464F5000B781C /* GameBaseController.xib */,
+				70E699B0201489DA000B781C /* ChannelController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		70443F86201300B4006177C5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				70E699A8201441C4000B781C /* GameBaseView.xib */,
+				70E699AA20144216000B781C /* GameBaseView.swift */,
+				70E699B4201494CA000B781C /* ChannelViewCell.swift */,
+				70E699B5201494CA000B781C /* ChannelViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		70443F87201300B8006177C5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				70E699B220148A7E000B781C /* ChannelData.swift */,
+				70E699B82014AE8A000B781C /* TableData.swift */,
+				70E699BA20158C76000B781C /* Constants.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		70443F88201300C0006177C5 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		70443F8920130144006177C5 /* DataService */ = {
+			isa = PBXGroup;
+			children = (
+				70443F8A20130178006177C5 /* JSONParsing.swift */,
+				70443F8C201301E4006177C5 /* XMLParsing.swift */,
+				70443F8E2013020A006177C5 /* HTTP.swift */,
+			);
+			path = DataService;
+			sourceTree = "<group>";
+		};
+		70443F902013050B006177C5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				70443F7A20130052006177C5 /* Assets.xcassets */,
+				70443F91201305C1006177C5 /* raw */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		70443F91201305C1006177C5 /* raw */ = {
+			isa = PBXGroup;
+			children = (
+				70443F92201305C1006177C5 /* bet_success.mp3 */,
+				70443F93201305C1006177C5 /* tie.mp3 */,
+				70443F94201305C1006177C5 /* bet_ready.mp3 */,
+				70443F95201305C1006177C5 /* selectchip.mp3 */,
+				70443F96201305C1006177C5 /* timer_new.mp3 */,
+				70443F97201305C1006177C5 /* player_win.mp3 */,
+				70443F98201305C1006177C5 /* no_more_bet.mp3 */,
+				70443F99201305C1006177C5 /* banker_win.mp3 */,
+				70443F9A201305C1006177C5 /* dragon_win.mp3 */,
+				70443F9B201305C1006177C5 /* tiger_win.mp3 */,
+			);
+			path = raw;
+			sourceTree = "<group>";
+		};
+		D1F4AE03CD43888B3D545E49 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				59114F148FF8D962A5E1748A /* Pods-FireBet_IOS.debug.xcconfig */,
+				E734D84592BA1F9C15F45CEF /* Pods-FireBet_IOS.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		70443F6F20130052006177C5 /* FireBet_IOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 70443F8220130052006177C5 /* Build configuration list for PBXNativeTarget "FireBet_IOS" */;
+			buildPhases = (
+				FF4FAA9F1A2E6922BB339E7E /* [CP] Check Pods Manifest.lock */,
+				70443F6C20130052006177C5 /* Sources */,
+				70443F6D20130052006177C5 /* Frameworks */,
+				70443F6E20130052006177C5 /* Resources */,
+				FC80FFC3C308FEE016E0FE24 /* [CP] Embed Pods Frameworks */,
+				FF508DF6F043D55CCBDFBAEB /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FireBet_IOS;
+			productName = FireBet_IOS;
+			productReference = 70443F7020130052006177C5 /* FireBet_IOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		70443F6820130052006177C5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Thanh Minh";
+				TargetAttributes = {
+					70443F6F20130052006177C5 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 70443F6B20130052006177C5 /* Build configuration list for PBXProject "FireBet_IOS" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 70443F6720130052006177C5;
+			productRefGroup = 70443F7120130052006177C5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				70443F6F20130052006177C5 /* FireBet_IOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		70443F6E20130052006177C5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70443FA2201305C1006177C5 /* no_more_bet.mp3 in Resources */,
+				70E699A9201441C4000B781C /* GameBaseView.xib in Resources */,
+				70443F9E201305C1006177C5 /* bet_ready.mp3 in Resources */,
+				70443F9C201305C1006177C5 /* bet_success.mp3 in Resources */,
+				70E699B7201494CA000B781C /* ChannelViewCell.xib in Resources */,
+				70443FA920131C91006177C5 /* LoginController.xib in Resources */,
+				70443FA3201305C1006177C5 /* banker_win.mp3 in Resources */,
+				70443F9D201305C1006177C5 /* tie.mp3 in Resources */,
+				70E699AF201464F5000B781C /* GameBaseController.xib in Resources */,
+				70443FA1201305C1006177C5 /* player_win.mp3 in Resources */,
+				70443F7B20130052006177C5 /* Assets.xcassets in Resources */,
+				70443FA4201305C1006177C5 /* dragon_win.mp3 in Resources */,
+				70443FA5201305C1006177C5 /* tiger_win.mp3 in Resources */,
+				70443FA0201305C1006177C5 /* timer_new.mp3 in Resources */,
+				70443FB7201330D1006177C5 /* MainController.xib in Resources */,
+				70443F9F201305C1006177C5 /* selectchip.mp3 in Resources */,
+				70443FB32013231C006177C5 /* IntroController.xib in Resources */,
+				70443F7920130052006177C5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		FC80FFC3C308FEE016E0FE24 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-FireBet_IOS/Pods-FireBet_IOS-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/Starscream/Starscream.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Starscream.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FireBet_IOS/Pods-FireBet_IOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FF4FAA9F1A2E6922BB339E7E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FireBet_IOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FF508DF6F043D55CCBDFBAEB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FireBet_IOS/Pods-FireBet_IOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		70443F6C20130052006177C5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70443FB22013231C006177C5 /* IntroController.swift in Sources */,
+				70443FB6201330D1006177C5 /* MainController.swift in Sources */,
+				70E699B320148A7E000B781C /* ChannelData.swift in Sources */,
+				70443F8F2013020A006177C5 /* HTTP.swift in Sources */,
+				70E699B6201494CA000B781C /* ChannelViewCell.swift in Sources */,
+				70E699B1201489DA000B781C /* ChannelController.swift in Sources */,
+				70E699B92014AE8A000B781C /* TableData.swift in Sources */,
+				70443FA820131C91006177C5 /* LoginController.swift in Sources */,
+				70E699AE201464F5000B781C /* GameBaseController.swift in Sources */,
+				70443F8D201301E4006177C5 /* XMLParsing.swift in Sources */,
+				70E699AB20144216000B781C /* GameBaseView.swift in Sources */,
+				70E699BB20158C76000B781C /* Constants.swift in Sources */,
+				70443F8B20130178006177C5 /* JSONParsing.swift in Sources */,
+				70443F7420130052006177C5 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		70443F7720130052006177C5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				70443F7820130052006177C5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		70443F8020130052006177C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		70443F8120130052006177C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		70443F8320130052006177C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 59114F148FF8D962A5E1748A /* Pods-FireBet_IOS.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZQH587T855;
+				INFOPLIST_FILE = FireBet_IOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.appsviet.FireBet-IOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		70443F8420130052006177C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E734D84592BA1F9C15F45CEF /* Pods-FireBet_IOS.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZQH587T855;
+				INFOPLIST_FILE = FireBet_IOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.appsviet.FireBet-IOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		70443F6B20130052006177C5 /* Build configuration list for PBXProject "FireBet_IOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				70443F8020130052006177C5 /* Debug */,
+				70443F8120130052006177C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		70443F8220130052006177C5 /* Build configuration list for PBXNativeTarget "FireBet_IOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				70443F8320130052006177C5 /* Debug */,
+				70443F8420130052006177C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 70443F6820130052006177C5 /* Project object */;
+}
